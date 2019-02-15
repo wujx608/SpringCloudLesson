@@ -7,10 +7,6 @@ server:
 spring:
   application:
     name: eurekaclient-v09-config-1
-management:
-  	security:
-    	#关闭安全验证，否则访问refresh端点时会提示权限不足
-    	enabled: false
   rabbitmq:
     host: localhost
     port: 5672
@@ -19,3 +15,9 @@ management:
   sleuth:
     sampler:
       percentage: 1.0
+      
+
+management:
+  	security:
+    	#关闭安全验证，否则访问refresh端点时会提示权限不足
+    	enabled: false
