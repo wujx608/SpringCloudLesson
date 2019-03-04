@@ -1,0 +1,11 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: index
+  profiles:
+    active: dev
+#开启熔断器
+feign:
+  hystrix:
+    enabled: true
