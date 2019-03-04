@@ -1,12 +1,15 @@
-eureka:
+eureka: #指向的配置中心 的信息.
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://localhost:8888/eureka/
 server:
   port: 8763
 spring:
   application:
-    name: clientv14-at-config
+    name: gateway-at-config
 management:
   security:
     #关闭安全验证，否则访问refresh端点时会提示权限不足
