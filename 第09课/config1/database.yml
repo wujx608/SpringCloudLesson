@@ -1,6 +1,4 @@
 spring:
-  autoconfigure:
-    exclude:org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
   datasource:
     url: jdbc:mysql://10.18.97.79:3306/cpmdb?useUnicode=true&characterEncoding=utf-8
     username: cpmdb
